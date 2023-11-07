@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Угадай число</title>
+        <link rel="stylesheet" href="./assets/style/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1 class="title">Угадай число</h1>
+            <p class="description">
+                Угадай число, загаданное компьютером! 
+                Число находится в диапазоне от 1 до 100.
+            </p>
+            <div class="range">
+                <p class="range-text">Выбери диапазон чисел:</p>
+                <form class="container-input">
+                    <p class="from">От</p>
+                    <input value='1' type="text" class="input-from input-range" />
+                    <p class="until">До</p>
+                    <input type="text" value='5000' class="input-until input-range" />
+                    <button class="btn-change"><img class="check-mark" src="./assets/img/check-mark.svg" alt=""></button>
+                </form>
+            </div>
+            <p class="input-number-text">Введите число:</p>
+            <input type="text" class="input-number" />
+            <div class="attempts"><span class="attempts-text">Количество попыток:</span><span class="attempts-count"></span></div>
+            <p class="hint">Подсказка: Число является четным.</p>
+            <p class="error">
+                Внимание! Число содержится в диапазоне от 1 до 100!
+            </p>
+            <button class="reset">Начать заново</button>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
