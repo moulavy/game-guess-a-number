@@ -38,7 +38,8 @@ export default class Game {
          attempts: this.attempts,
          isEven: this.isEven,
          isMore: this.isMore,
-         checkGuessNumber: this.isGuessNumber
+         checkGuessNumber: this.isGuessNumber,
+        userNumber:this.userNumber
       }
    }
 

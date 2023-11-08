@@ -120,10 +120,15 @@ margin-top: 100px;
 .hint{
    padding: 0;
    margin: 15px 0 0;
+   height: 24px;
 }
 .error{
    padding: 0;
    margin: 15px 0 0;
+   width: 600px;
+   height: 48px;
+   text-align: center;
+   color:rgb(208, 5, 5);
 }
 .display-hide{
    display: none;
