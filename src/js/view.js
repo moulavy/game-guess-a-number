@@ -52,7 +52,10 @@ export default class View {
 
       }
    }
-
+   renderError() {
+      this.elementResponse.textContent = 'Некорректный ввод. Введите целое число.';
+      this.elementResponse.classList.add('false')
+   }
 
    renderReset(minValue = 1, maxValue = 100) {
       this.minValue = minValue;
