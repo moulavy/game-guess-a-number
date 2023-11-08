@@ -9,7 +9,7 @@ height: 100vh;
 }
 
 .wrapper{
-   height: 700px;
+   height: 900px;
    width: 1000px;
    font-weight: 600;
    border: 1px pink solid;
@@ -45,20 +45,25 @@ color:#082c00;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 border: 0.3px solid rgb(96, 93, 93);
 }
-.btn-change{
+.btn{
    cursor: pointer;
    width: 30px;
    height: 30px;
    border-radius: 50%;
    padding: 0;
    margin: 0 0 0 5px;
-   border: 0.1px solid black;
+   border: none;
    box-shadow:2px 4px 3px 0px rgb(161, 105, 105);
    background-color:#fff;
 }
-.btn-change:active{
+.btn:active{
 box-shadow:none;
 opacity: 0.7;
+}
+.btn-submit{
+    width: 80px;
+   height: 80px;
+   margin: 0 0 0 20px;
 }
 .check-mark{
    width: 100%;
@@ -91,6 +96,7 @@ opacity: 0.7;
    border-radius: 10px;
    font-weight: 400;   
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-top: 100px;
 }
 .reset:active{ 
    opacity: 0.8;
@@ -98,4 +104,26 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .error{
    padding:0;
    margin:0 0 15px;
+}
+.response{
+   display: none;
+   padding: 0;
+   margin:15px 0 0;
+   
+}
+.false{
+   display: block;
+   color:rgb(208, 5, 5);
+}
+.true{
+display: block;
+   color:green;
+}
+.hint{
+   padding: 0;
+   margin: 15px 0 0;
+}
+.error{
+   padding: 0;
+   margin: 15px 0 0;
 }
