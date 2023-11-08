@@ -3,7 +3,7 @@ import Controller from './controller.js';
 import View from './view.js';
 
 
-const game = new Game(1,100);
+const game = new Game();
 const view = new View();
 const controller = new Controller(game,view);
 

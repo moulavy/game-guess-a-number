@@ -3,7 +3,7 @@ export default class Game {
       this.reset(minValue, maxValue);
    }
 
-   reset(minValue, maxValue) {
+   reset(minValue=1, maxValue=100) {
       this.minValue = minValue;
       this.maxValue = maxValue;
       this.randomNumber = this.getRandomNumber();
@@ -18,6 +18,7 @@ export default class Game {
    checkGuessNumber(userNumber) {
       this.userNumber = userNumber;
       if (this.userNumber === this.randomNumber) {
+         this.attempts++;
          return true;
       }
       else {

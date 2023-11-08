@@ -1,8 +1,6 @@
 
 export default class View {
-   constructor() {
-      this.elementMinValue = document.querySelector('.imput-min');
-      this.elementMaxValue = document.querySelector('.imput-max');
+   constructor() {      
       this.elementHintOdd = document.querySelector('.hint-odd');
       this.elementHintMore = document.querySelector('.hint-more');
       this.elementAttemptsCount = document.querySelector('.attempts-count');
@@ -10,11 +8,8 @@ export default class View {
       this.elementDescription = document.querySelector('.description');
       this.elementResponse = document.querySelector('.response');
    }
-   reset(minValue = 1, maxValue = 100) {
-      this.minValue = minValue;
-      this.maxValue = maxValue;
-   }
-   rezult(res) {
+  
+   renderRezult(res) {
       if (res) {
          this.elementResponse.textContent = 'Верно! Вы угадали!';
          this.elementResponse.classList.remove('false');
@@ -26,6 +21,22 @@ export default class View {
          this.elementResponse.classList.add('false');
        
       }
+   }
+
+   renderUpdate() {
+      
+   }
+
+   renderReset(minValue=1,maxValue=100) {
+      this.minValue = minValue;
+      this.maxValue = maxValue;
+      this.elementDescription.textContent =`Угадай число, загаданное компьютером! Число находится в
+                диапазоне от ${this.minValue} до ${this.maxValue}.`
+      this.elementErrorRange.classList.add('.display-hide');
+      this.elementErrorRange.classList.add('display-none');
+      this.elementAttemptsCount.textContent = '0';
+      this.elementHintMore.classList.add('display-none');
+      this.elementHintOdd.classList.add('display-none');
    }
 
 }
