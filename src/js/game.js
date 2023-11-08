@@ -19,12 +19,12 @@ export default class Game {
       this.userNumber = userNumber;
       if (this.userNumber === this.randomNumber) {
          this.attempts++;
-         return true;
+         this.isGuessNumber= true;
       }
       else {
          this.attempts++;
          this.isMore = this.userNumber > this.randomNumber;
-         return false;
+         this.isGuessNumber = false;
       }
    }
 
@@ -38,7 +38,7 @@ export default class Game {
          attempts: this.attempts,
          isEven: this.isEven,
          isMore: this.isMore,
-         checkGuessNumber: this.checkGuessNumber(this.userNumber)
+         checkGuessNumber: this.isGuessNumber
       }
    }
 
