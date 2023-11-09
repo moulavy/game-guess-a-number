@@ -5,4 +5,5 @@
 
 Сайт был разработан при помощи HTML,CSS,JavaScript. Была использована архитектура MVC. Код разделен на классы Game, View, Controller. 
 
-# Ссылка на сайт: https://moulavy.github.io/game-guess-a-number/
+# Ссылка на сайт: 
+https://moulavy.github.io/game-guess-a-number/
